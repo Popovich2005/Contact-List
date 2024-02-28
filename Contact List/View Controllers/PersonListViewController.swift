@@ -11,15 +11,11 @@ final class PersonListViewController: UITableViewController {
     
     private let personList = Person.getPersons()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
 // MARK: - Navigation
-        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            guard let indexPath = tableView.indexPathForSelectedRow else { return }
-            let detailsVC = segue.destination as? PersonDetailsViewController
-            detailsVC?.person = personList[indexPath.row]
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        let detailsVC = segue.destination as? PersonDetailsViewController
+        detailsVC?.person = personList[indexPath.row]
     }
 }
 
@@ -34,9 +30,9 @@ extension PersonListViewController {
         let person = personList[indexPath.row]
         
         var content = cell.defaultContentConfiguration()
-        content.text = "\(person.persons[0].name) \(person.persons[0].surname)"
+        content.text = person.fullName
         cell.contentConfiguration = content
-
+        
         return cell
     }
 }

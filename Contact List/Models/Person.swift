@@ -7,7 +7,11 @@
 
 
 struct Person {
-    let persons: [DataStore]
+    let persons: DataStore
+    
+    var fullName: String {
+        "\(persons.name) \(persons.surname)"
+    }
     
     static func getPersons() -> [Person] {
         let shuffledNames = names.shuffled()
@@ -24,7 +28,7 @@ struct Person {
                 email: shuffledEmails[index],
                 phone: shuffledPhones[index]
             )
-            let person = Person(persons: [randomPerson])
+            let person = Person(persons: randomPerson)
             contacts.append(person)
         }
         return contacts
