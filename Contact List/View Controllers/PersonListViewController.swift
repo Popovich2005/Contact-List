@@ -18,8 +18,15 @@ final class PersonListViewController: UITableViewController {
 // MARK: - Navigation
         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             guard let indexPath = tableView.indexPathForSelectedRow else { return }
-            let detailsVC = segue.destination as? PersonDetailsViewController
-            detailsVC?.person = personList[indexPath.row]
+            
+            let tabBarVC = segue.destination as? UITabBarController
+            tabBarVC?.viewControllers?.forEach { viewController in
+                if let detailsVC = viewController as? PersonDetailsViewController {
+                    detailsVC.person = personList[indexPath.row]
+                } else if let allInfoVC = viewController as? PersonsAllInfoViewController {
+                    allInfoVC.person = personList[indexPath.row]
+                }
+            }
     }
 }
 

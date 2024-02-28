@@ -16,6 +16,7 @@
 		3A4F3A152B8E409C000624FB /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4F3A142B8E409C000624FB /* DataStore.swift */; };
 		3A4F3A172B8E450D000624FB /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4F3A162B8E450D000624FB /* Person.swift */; };
 		3A4F3A192B8E5837000624FB /* PersonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4F3A182B8E5837000624FB /* PersonListViewController.swift */; };
+		3A4F3A1B2B8F27D4000624FB /* PersonsAllInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4F3A1A2B8F27D4000624FB /* PersonsAllInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3A4F3A142B8E409C000624FB /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		3A4F3A162B8E450D000624FB /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		3A4F3A182B8E5837000624FB /* PersonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListViewController.swift; sourceTree = "<group>"; };
+		3A4F3A1A2B8F27D4000624FB /* PersonsAllInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsAllInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			children = (
 				3A4F39FF2B8E3DFB000624FB /* PersonDetailsViewController.swift */,
 				3A4F3A182B8E5837000624FB /* PersonListViewController.swift */,
+				3A4F3A1A2B8F27D4000624FB /* PersonsAllInfoViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				3A4F3A002B8E3DFB000624FB /* PersonDetailsViewController.swift in Sources */,
 				3A4F3A152B8E409C000624FB /* DataStore.swift in Sources */,
 				3A4F3A192B8E5837000624FB /* PersonListViewController.swift in Sources */,
+				3A4F3A1B2B8F27D4000624FB /* PersonsAllInfoViewController.swift in Sources */,
 				3A4F39FC2B8E3DFB000624FB /* AppDelegate.swift in Sources */,
 				3A4F39FE2B8E3DFB000624FB /* SceneDelegate.swift in Sources */,
 			);
